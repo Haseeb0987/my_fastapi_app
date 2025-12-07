@@ -17,3 +17,12 @@ starlette==0.50.0
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 uvicorn==0.38.0
+sqlalchemy[asyncio]
+aioodbc      # async ODBC driver for SQL Server
+pydantic
+pydantic-settings # for loading .env files nicely
+python-dotenv
+pyodbc             # needed as aioodbc dependency
+# optional but recommended
+passlib[bcrypt]
+python-jose[cryptography]
